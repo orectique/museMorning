@@ -1,4 +1,4 @@
-* {
+a* {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
@@ -12,9 +12,9 @@
   }
   
   body {
-    font: 12px "Monaco", Inconsolata, monospace;
-    background: #012638;
-    color: #f8f8f8;
+    font: 23px "Lato", lato, monospace;
+    background: #321325;
+    color: #E01A4F;
   }
   
   .terminal {
@@ -22,6 +22,7 @@
     background: transparent;
     position: absolute;
     left: 26%;
+    right: 26%;
     top: 30%;
     margin-top: -50px;
     margin-left: -125px;
@@ -35,16 +36,15 @@
   
   .dollar:before {
     content: '$';
-    color: #52a563;
+    color: #FCDC4D;
   }
-  
-  .home {
-    color: #e28d47;
-    padding-bottom: 3px;
+
+  .arrow:before {
+    content: '>';
+    color: #FCDC4D;
   }
-  
-  a {
-    font: 12px "Monaco", Inconsolata, monospace;
-    text-decoration: underline;
-    color: #f8f8f8;
+
+  .exec:before {
+    content: '...';
+    color: #FCDC4D;
   }
